@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact form demonstration with name, email, phone, category and message fields." />
+  <meta name="theme-color" content="#075bea" />
+  <title>Rhys AP | Contact Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to content</a>
+<header class="site-header">
+  <div class="header-top">
+    <a class="brand" href="index.html" aria-label="Rhys AP home">RHYS <span>AP</span></a>
+    <div class="header-page-title">CONTACT FORM</div>
+    <div class="header-tagline">PERSONAL PORTFOLIO</div>
+  </div>
+  <div class="menu-bar">
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="main-navigation">
+      <span class="hamburger-lines" aria-hidden="true"><span></span><span></span><span></span></span>
+      <span class="menu-word">MENU</span>
+    </button>
+    <nav class="nav" id="main-navigation" aria-label="Main navigation">
+      <a href="index.html">Home</a><a href="about-me.html">About Me</a><a href="gallery.html">Gallery</a><a href="contact-details.html">Contact Details</a><a href="contact-form.html" class="active" aria-current="page">Contact Form</a>
+    </nav>
+  </div>
+</header>
+<main id="main-content" class="page contact-form-page content-width">
+  <section class="page-heading-block"><p class="eyebrow">CONTACT FORM</p><h1>Let’s talk<span class="title-dot">.</span></h1><p>Fill in the fields below. Required fields are marked with an asterisk.</p></section>
+  <section class="form-layout">
+    <div class="form-aside"><span class="form-aside-icon" aria-hidden="true">✉</span><h2>Have a question?</h2><p>Leave a message using the form. This is a front-end demonstration, so the form does not send or store your details.</p><div class="form-aside-line"></div><p class="form-aside-small">Please do not enter sensitive personal information.</p></div>
+    <form class="contact-form card-panel" id="contact-form" novalidate>
+      <div class="form-title"><p class="eyebrow">YOUR MESSAGE</p><h2>Contact Form</h2></div>
+      <div class="form-grid">
+        <div class="form-field"><label for="full-name">Full name <span aria-hidden="true">*</span></label><input id="full-name" name="fullName" type="text" autocomplete="name" placeholder="Your full name" required /></div>
+        <div class="form-field"><label for="email">Email <span aria-hidden="true">*</span></label><input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required /></div>
+        <div class="form-field"><label for="phone">Phone No.</label><input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="Optional" /></div>
+        <div class="form-field"><label for="category">Category <span aria-hidden="true">*</span></label><select id="category" name="category" required><option value="">Choose a category</option><option>General question</option><option>Website feedback</option><option>Project enquiry</option><option>Other</option></select></div>
+        <div class="form-field form-field-wide"><label for="message">Message <span aria-hidden="true">*</span></label><textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea></div>
+      </div>
+      <p class="form-disclaimer">Demo form only: messages are not sent, saved or emailed.</p>
+      <div class="form-actions"><button class="button button-primary" type="submit">Check and submit <span aria-hidden="true">→</span></button><button class="button button-quiet" type="reset">Clear form</button></div>
+      <div class="form-feedback" id="form-feedback" role="status" aria-live="polite" hidden></div>
+    </form>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <a class="footer-brand" href="index.html">RHYS AP <span>PORTFOLIO</span></a>
+    <p>A personal portfolio website.</p>
+    <nav class="footer-links" aria-label="Footer navigation">
+      <a href="index.html">Home</a><a href="about-me.html">About Me</a><a href="gallery.html">Gallery</a><a href="contact-details.html">Contact</a>
+    </nav>
+    <small>© <span id="current-year">2026</span> Rhys AP</small>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
